@@ -1,12 +1,23 @@
 import React from 'react';
-import Header from '../components/Header.jsx';
-import About from '../components/About.jsx';
+import Header from './Header.jsx';
+import Portfolio from './portfolio/Portfolio.jsx';
 
-export default class Frame extends React.Component {
-  render() {
-    return <React.Fragment>
+// export default class Frame extends React.Component {
+//   render() {
+//     return <React.Fragment>
+//       <Header/>
+//       <Portfolio/>
+//     </React.Fragment>
+//   }
+// }
+
+const Frame = () => {
+  return (
+    <React.Fragment>
       <Header/>
-      <About/>
+      <Portfolio/>
     </React.Fragment>
-  }
+  )
 }
+
+export default Frame;

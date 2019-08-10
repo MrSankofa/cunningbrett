@@ -17,7 +17,6 @@ const Header = () => {
             <a className="linkedin" href="https://www.linkedin.com/pub/brett-cunningham-ii/a7/a96/b3" data-username="#">LinkedIn</a>
             <a className="github" href="https://github.com/MrSankofa">Github</a>
             <a className="email" href="mailto:bwcunninghamii@gmail.com">Email me</a>
-            <a className="email" href="recastlyRedux.html">recastlyRedux</a>
           </div>
 
         </div>
