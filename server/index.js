@@ -11,6 +11,10 @@ app.use(express.static(__dirname + '/../client/dist'))
 
 let PORT = process.env.PORT || 3000
 
+app.get('/', (req, res) => {
+  res.status(200).send('ok')
+})
+
 app.listen(PORT, (err) => {
   if (err) {
     // eslint-disable-next-line no-console
@@ -19,3 +23,5 @@ app.listen(PORT, (err) => {
   // eslint-disable-next-line no-console
   console.log(`cunningbrett is listening on port ${PORT}!`)
 })
+
+module.exports = app
