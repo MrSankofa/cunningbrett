@@ -1,0 +1,46 @@
+{
+  "name": "cunningbrett",
+  "version": "2.0.0",
+  "description": "Portfolio to display projects",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "buildDev": "webpack -d --watch",
+    "build": "webpack -p",
+    "start": "node server/index.js",
+    "startDev": "nodemon server/index.js"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.19.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.0.6",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "morgan": "^1.9.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-redux": "^7.1.0",
+    "redux": "^4.0.4",
+    "webpack": "^4.38.0",
+    "webpack-cli": "^3.3.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrSankofa/cunningbrett.git"
+  },
+  "author": "Brett Cunningham II",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MrSankofa/cunningbrett/issues"
+  },
+  "homepage": "https://github.com/MrSankofa/cunningbrett#readme"
+}
