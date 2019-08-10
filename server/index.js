@@ -13,7 +13,9 @@ let PORT = process.env.PORT || 3000
 
 app.listen(PORT, (err) => {
   if (err) {
+    // eslint-disable-next-line no-console
     console.log('ERROR connecting to server:', err)
   }
+  // eslint-disable-next-line no-console
   console.log(`cunningbrett is listening on port ${PORT}!`)
 })
