@@ -12,3 +12,12 @@ test('server responds to GET /', (done) => {
         done();
     });
 });
+
+test('server responds to GET /recastlyRedux.html', (done) => {
+    request(server).get('/')
+    .then((response) => {
+        expect(response.statusCode).toBe(200);
+        done();
+    });
+});
+
