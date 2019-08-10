@@ -1,0 +1,201 @@
+/*------------------ @reset ------------------*/
+body,html { margin:0; padding: 0; width: 100%; /*height:100%;*/ }
+body,h1,h2,h3,h4,h5,h6,pre,code { font-size: 1em; }
+ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,body,html,p,blockquote,fieldset,legend,
+input,button,select,textarea,dl,dd,dt,hr,table,thead,tbody,tfoot,tr,th,td
+{ margin:0; padding:0 }
+img,a img,:link img,:visited img { border:0;padding:0;margin:0; }
+address,cite,caption { font-style: normal }
+caption,th { text-align: left }
+ol,ul { margin:0; margin-left: 25px; }
+a,button { outline: 0; }
+input[type="submit"]::-moz-focus-inner, input[type="button"]::-moz-focus-inner, button::-moz-focus-inner { border: 0px; }
+
+@font-face{
+	font-family:ProximaNovaLight;
+	font-weight:normal;
+	src:url("fonts/Proxima-Nova-Light.otf") format("opentype");
+}
+
+@font-face{
+	font-family:ProximaNovaBold;
+	font-weight:bold;
+	src:url("fonts/Proxima-Nova-Bold.otf") format("opentype");
+}
+
+@font-face{
+	font-family:ProximaNovaSemibold;
+	font-weight:normal;
+	src:url("fonts/Proxima-Nova-Semibold.otf") format("opentype");
+}
+
+::-moz-selection {
+	background:rgba(0,0,0,0.9);
+	color:#fff;
+}
+::selection {
+	background:rgba(0,0,0,0.9);
+	color:#fff;
+}
+
+/*------------------ @body ------------------*/
+body {
+	background: #f4f3f3 url(../img/city-cartoon-background.gif) repeat-x center top fixed;
+	background-size: 1000px 500px;
+	color: #444948;
+	font: normal 16px/24px "ProximaNovaLight", "Helvetica Neue", Helvetica, sans-serif;
+}
+
+a {
+	text-decoration: none;
+	color: #214a64;
+}
+
+p strong {
+	font-family: ProximaNovaSemiBold;
+}
+
+	h1 {
+		margin: 0 auto;
+	}
+
+	h1, h1 a {
+		width: 333px;
+		height: 242px;
+		display: block;
+	}
+	
+		h1 a {
+			text-indent: -9999px;
+			background: url(images/logo.png) no-repeat 0 0;
+			border: 0;
+		}
+
+	header {
+		height: 526px;
+		position: fixed;
+		top: 0;
+		width: 100%;
+	}
+
+	header .brett {
+		padding-top: 150px;
+		-webkit-animation-name: bounceInDown;
+		-moz-animation-name: bounceInDown;
+		-o-animation-name: bounceInDown;
+		animation-name: bounceInDown;
+
+	-webkit-animation-delay: 1s;
+		 -moz-animation-delay: 1s;
+		   -o-animation-delay: 1s;
+		      animation-delay: 1s;
+
+	-webkit-animation-duration: 1s;
+	   -moz-animation-duration: 1s;
+	     -o-animation-duration: 1s;
+	        animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	   -moz-animation-fill-mode: both;
+	     -o-animation-fill-mode: both;
+	        animation-fill-mode: both;
+	}
+
+	header .avatar {
+		display: block;
+		border-radius: 10%;
+		width: 150px;
+		height: 250px;
+		margin: 0 auto;
+	}
+
+	header h2 {
+		text-transform: uppercase;
+		color: #fff;
+		text-align: center;
+		display: block;
+		font-size: 3em;
+		line-height: 1em;
+		padding-top: 20px;
+	}
+
+	header h2 span {
+		display: block;
+		font-size: 14px;
+		padding-top: 20px;
+		font-weight: normal;
+		color: rgba(255,255,255,0.6);
+		font-family: ProximaNovaLight;
+		letter-spacing: 0.2em;
+	}
+
+	header .social {
+		text-align: center;
+		padding-top: 0;
+	}
+
+		header .social a {
+			width: 50px;
+			height: 100px;
+			display: inline-block;
+			text-indent: -999em;
+			-webkit-transform: scale(0.7, 0.7);
+			transform: scale(0.7, 0.7);
+			background-position: center center;
+			background-repeat: no-repeat;
+			text-align: center;
+			border: 0;
+
+			-webkit-transition: all .2s ease-in-out; /* For Safari 3.1 to 6.0 */
+    	transition: all .2s ease-in-out;
+		}
+			header .social a.linkedin { background-image: url("../img/linkedin.png"); }
+			header .social a.email    { background-image: url("../img/email.png"); }
+			header .social a.github   { background-image: url("../img/github-2.png"); }
+		
+#top {
+
+}
+
+
+
+
+@media only screen and (max-width: 640px) {
+	.portfolio, 
+	.portfolio .column,
+	footer,
+	#contact form,
+	#container,
+	#container h2 span { width: 100%; box-sizing: border-box; }
+
+	#container { margin-bottom: 0; }
+
+	footer { padding-top: 0; padding-bottom: 10px; }
+
+	.portfolio section a.item,
+	.portfolio section a.item img,
+	.portfolio section.thirds,
+	.portfolio section.thirds:nth-child(2),
+	.portfolio section.column:nth-child(2),
+	.portfolio section.column { padding: 0; margin: 0; float: none; width: 100%; }
+
+	.portfolio section a.item,
+	.portfolio section.thirds .icon,
+	.portfolio section.thirds .item { margin-bottom: 10px; }
+
+	#container,
+	#contact form {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+
+	section.ethos,
+	#totop,
+	#container h2 span em.righty { display: none; }
+
+	div.button { padding-top: 10px; }
+
+	header .brett { padding-top: 120px; }
+
+	header h2 span { padding-top: 0; padding-bottom: 20px; }	
+}
+
