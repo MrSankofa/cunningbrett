@@ -1,5 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom'
-import Portfolio from './Portfolio/Portfolio.jsx'
+import Frame from './components/frame.jsx'
 
-ReactDOM.render(<Portfolio/>, document.getElementById('root'));
+ReactDOM.render(<Frame/>, document.getElementById('root'));
