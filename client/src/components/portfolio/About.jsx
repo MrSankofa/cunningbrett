@@ -1,5 +1,5 @@
 import React from 'react';
-import YoutubeApp from './react/YouTubeApp.jsx'
+import YoutubeApp from './react/YoutubeApp.jsx'
 
 
 const About = () => {
