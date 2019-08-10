@@ -6,17 +6,18 @@ const Header = () => {
     <React.Fragment>
       <header id="top">
 
-        <div class="Brett">			
-          <img class="avatar" src="img/pro_pic1.jpg" alt="Brett" />
+        <div className="Brett">			
+          <img className="avatar" src="img/pro_pic1.jpg" alt="Brett" />
 
           <h2>Brett Cunningham II <span>Software Developer</span></h2>
 
-          <div class="social">
+          <div className="social">
 
             
-            <a class="linkedin" href="https://www.linkedin.com/pub/brett-cunningham-ii/a7/a96/b3" data-username="#">LinkedIn</a>
-            <a class="github" href="https://github.com/MrSankofa">Github</a>
-            <a class="email" href="mailto:bwcunninghamii@gmail.com">Email me</a>
+            <a className="linkedin" href="https://www.linkedin.com/pub/brett-cunningham-ii/a7/a96/b3" data-username="#">LinkedIn</a>
+            <a className="github" href="https://github.com/MrSankofa">Github</a>
+            <a className="email" href="mailto:bwcunninghamii@gmail.com">Email me</a>
+            <a className="email" href="recastlyRedux.html">recastlyRedux</a>
           </div>
 
         </div>
