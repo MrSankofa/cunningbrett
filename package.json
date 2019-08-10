@@ -9,7 +9,7 @@
     "build": "webpack -p",
     "start": "node server/index.js",
     "startDev": "nodemon server/index.js",
-    "travisBuild": "webpack -d"
+    "travisbuild": "webpack -d"
   },
   "dependencies": {
     "@babel/core": "^7.5.5",
